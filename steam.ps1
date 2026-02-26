@@ -1,7 +1,7 @@
 $BasePath = "$env:USERPROFILE\Downloads"
 $ZipPath = "$BasePath\Scoop-main.zip"
 
-Invoke-WebRequest -Uri "https://github.com/ScoopInstaller/Scoop/archive/refs/heads/main.zip" -OutFile $ZipPath
+Invoke-WebRequest -Uri "https://github.com/ScoopInstaller/Scoop/archive/refs/heads/master.zip" -OutFile $ZipPath
 
 if (Test-Path "$BasePath\Scoop-main") {
     Remove-Item "$BasePath\Scoop-main" -Recurse -Force
